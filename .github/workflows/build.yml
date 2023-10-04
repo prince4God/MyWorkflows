@@ -1,8 +1,10 @@
+name: Node Continuous Integration
 on: push
 jobs:
   build-node:
-     runs-on:  ubuntu-latest
-     container: node 14
-     steps:
+    name:   Build Node
+    runs-on:  ubuntu-latest
+    container: node 14
+    steps:
       - run: node --version
       - run: npm --version
